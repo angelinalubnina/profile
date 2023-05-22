@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+  </header>
+  <main class="main">
+    <section class="etalonLength">
+      <div class="container">
+        <h1>Распил досок</h1>
+        <div> 
+          <h2>Введите эталонную длинну доски</h2>
+          <label for="etalonLength">Эталон</label>
+          <input type="number" id="etalonLength" name="etalonLength">
+        </div>
+      </div>
+    </section>
+    <section class="lengthAndAmount">
+      <div class="container">
+        <h2>Выедите длину и количество используемых отрезков</h2>
+        <label for="length">Длина</label>
+        <input type="number" id="inputLength" name="length" value="5">
+        <label for="amount">Количество</label>
+        <input type="number" id="inputAmount" value="6">
+        <div id="button">
+          <button id="addBtn">Добавить</button>
+          <button id="calculateBtn">Рассчитать</button>
+        </div>
+        <table border="1">
+          <thead>
+            <tr>
+              <th>Длина</th>
+              <th>Количество</th>
+            </tr>
+          </thead>
+          <tbody>
+          </tbody>
+        </table>  
+        <div id="tableContainer"></div>
+      </div>  
+    </section>
+  </main>
+  <footer>
+  </footer>
+  <script src="scriptHTML.js"></script>
+  <script src="scriptJS.js"></script>
+</body>
+</html>
